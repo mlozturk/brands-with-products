@@ -13,6 +13,6 @@ git clone https://github.com/mlozturk/brands-with-products.git
 ```
 ### Starting Server
 ```
-$ rails server
+$ bin/rails server
 ```
-Then you can visit localhost:3000 from your browser.
+Then you can visit http://localhost:3000 from your browser.
