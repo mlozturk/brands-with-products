@@ -1,2 +1,13 @@
 <h1><%= @brand.brand_name %></h1>
+
 <img src="<%= @brand.logo_url %>" alt="Brand_logo_url">
+
+<h3>Products</h3>
+<ul>
+  <% @brand.products.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul><br>
+<%= link_to 'Edit', edit_brand_path(@brand) %>
+<p><%= link_to 'Delete', @brand, method: 'delete', data: { confirm: 'Are you sure?' }%></p>
+<p><%= link_to 'Go back to all brands', brands_path %></p>
