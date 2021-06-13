@@ -1,2 +1,7 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<h3>Add a Product</h3>
+<%= form_with model: @product do |form| %>
+  <p>Name: <%= form.text_field :name, :required => true %></p>
+
+  <p>Brand: <%= form.select :brand_id, Brand.all.map { |brand| [ brand.brand_name, brand.id ] } %></p>
+  <%= form.submit %>
+<% end %>
