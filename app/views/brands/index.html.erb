@@ -1,2 +1,10 @@
-<h1>Brands#index</h1>
-<p>Find me in app/views/brands/index.html.erb</p>
+<h1>List of Brands</h1>
+
+<ul>
+  <% @brands.each do |brand| %>
+    <li>
+    <%= link_to brand.brand_name, brand_path(brand)  %>
+    <% end %> </li>
+</ul>
+
+<div><%= link_to 'Create Brand', new_brand_path %></div>

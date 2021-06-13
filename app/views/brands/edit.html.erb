@@ -1,2 +1,8 @@
-<h1>Brands#edit</h1>
-<p>Find me in app/views/brands/edit.html.erb</p>
+<h1>Edit Brand</h1>
+
+<%= form_with model: @brand do |form| %>
+  <p>Brand Name: <%= form.text_field :brand_name, :required => true%></p>
+  <p>Image url: <%= form.text_field :logo_url %></p>
+
+  <%= form.submit %>
+<% end %>
