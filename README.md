@@ -1,4 +1,4 @@
-# E-Ticaret Application
+# Brands with Products Application
 
 A simple CRUD application with Ruby on Rails.
 ## Requirements
@@ -9,7 +9,7 @@ A simple CRUD application with Ruby on Rails.
 
 ### Cloning Repository
 ```bash
-git clone https://github.com/mlozturk/e-ticaret.git
+git clone https://github.com/mlozturk/brands-with-products.git
 ```
 ### Starting Server
 ```
